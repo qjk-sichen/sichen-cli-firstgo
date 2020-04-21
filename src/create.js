@@ -1,5 +1,7 @@
-
+// 项目创建
 import symbol from 'log-symbols';
+
+// 命令行语句高亮插件
 import chalk from 'chalk';
 import ora from 'ora';
 
@@ -14,6 +16,7 @@ let create = async (ProjectName) => {
 
     // 项目名不能为空
     if (ProjectName === undefined) {
+        // 这边要是项目名为空则提示错误
         console.log(symbol.error, chalk.red('创建项目的时候，请输入项目名'));
     } else {
         // 如果文件名不存在则继续执行,否则退出
@@ -56,7 +59,7 @@ let create = async (ProjectName) => {
                     answer.name = ProjectName;
                     updateJsonFile(fileName, answer)
                     .then(() => {
-                        console.log(symbol.success, chalk.green('配置文件更新完的。'));
+                        console.log(symbol.success, chalk.green('配置文件更新完成。'));
                     })
                 }, () => {
                     loading.fail('模板下载失败');

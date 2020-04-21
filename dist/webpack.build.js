@@ -1,4 +1,3 @@
-'use strict';
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin'); //引入vue-loader库
 const HtmlWebpackPlugin = require('html-webpack-plugin');

@@ -1,3 +1,4 @@
+// 入口文件
 import program from 'commander';
 import symbol from 'log-symbols';
 import chalk from 'chalk';

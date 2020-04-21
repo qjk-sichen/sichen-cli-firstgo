@@ -1,3 +1,4 @@
+// 项目初始化
 import child from 'child_process';
 import symbol from 'log-symbols';
 import chalk from 'chalk';
