@@ -1,3 +1,4 @@
+// 项目启动
 import webpack from "webpack";
 import WebpackDevServer from 'webpack-dev-server';
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');

@@ -1,3 +1,4 @@
+// 项目初始化
 import child from 'child_process';
 import symbol from 'log-symbols';
 import chalk from 'chalk';
@@ -27,7 +28,7 @@ let init = async (username, token) => {
                 loading.succeed(`package.json更新repository: 命令执行完成`);
             });
             await loadCmd(`git add .`, '执行git add');
-            await loadCmd(`git commit -a -m 'init'`, '执行git commit');
+            await loadCmd(`git commit -am 'init'`, '执行git commit');
             await loadCmd(`git push --set-upstream origin master`, '执行git push');
         }
         await loadCmd(`npm install`, '安装依赖');
